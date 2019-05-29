@@ -1,0 +1,29 @@
+{
+    "network": "mainnet",
+    "port": 13880,
+    
+    "services": [
+        "bitcoind",
+        "web",
+        "insight-alk-api",
+        "insight-alk"
+    ],
+    "servicesConfig": {
+        "insight-alk": {
+            "11routePrefix": "insight-alk",
+            "apiPrefix": "insight-alk-api"
+        },
+        "bitcoind": {
+            "connect": [{
+                "rpchost": "127.0.0.1",
+                "rpcport": 13802,
+                "rpcuser": "1234567890",
+                "rpcpassword": "1234567890",
+                "zmqpubrawtx": "tcp://127.0.0.1:13891"
+            }]
+        },
+        "web":{
+            "jsonRequestLimit":"500kb"
+        }
+    }
+}

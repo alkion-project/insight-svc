@@ -1,0 +1,9 @@
+{
+    "apps": [{
+        "name": "insight-alk",
+        "script": "start.js",
+        "args":"start",
+        "watch": false,
+        "exec_interpreter": "node@6.12.0"
+    }]
+}
